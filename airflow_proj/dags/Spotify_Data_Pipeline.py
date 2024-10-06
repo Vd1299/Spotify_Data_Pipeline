@@ -74,7 +74,7 @@ def run_etl():
 
 # Define the DAG
 with DAG(
-    dag_id='etl_pipeline3',
+    dag_id='spotify_etl_pipeline',
     schedule_interval='*/30 * * * *',  # Run every half hour
     start_date=days_ago(1),
     catchup=False,
